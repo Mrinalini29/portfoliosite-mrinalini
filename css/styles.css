@@ -10,13 +10,14 @@ font-Roboto
  */
 
 * {
+  margin: 0;
   box-sizing: border-box;
 }
 body{
     
 background-color: white;
 font-family: "Roboto", sans-serif;
-font-size: 16px;
+font-size: 18px;
 font-weight: 300;
 line-height: 1.6;
 
@@ -130,6 +131,8 @@ a:active {
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+ 
+ 
 }
 
 /* my-work.row{
@@ -141,11 +144,19 @@ a:active {
     text-align: center;
 
 }
+#hero h3{
+    text-align: center;
+
+}
 #hero {
+  text-align: center;
   background-color: #ffffff;
   padding: 20px 0;
-  display: inline-block;
+  
   width: 100%;
+}
+#hero span{
+    display: block;
 }
 
 .logo
@@ -176,4 +187,201 @@ hero{
 }
 main{
     padding-top: 150px;
+}
+@media only screen and (max-width: 639px) {
+    .row{
+        display: block;
+    }
+  .column.col-md-6 {
+    /* float: none; */
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    
+    margin-bottom: 20px; /* Optional: adds space between stacked sections */
+      
+}
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) and (max-width: 1200px) {
+    .about-row {
+    display: block;
+    /* Adjust spacing as needed */
+  }
+  .column.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .project-content {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+   .about-row .my-story{
+     width: 100%;
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+  /* .about-row > [class*="col-"] {
+    float: none;
+    display: block;
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+   .skills-tools {
+    display: flex;
+   
+    gap: 24px;
+    
+  } */
+  .skill-tools-heading{
+    display: flex;
+    gap: 24px;
+  }
+  .skills-tools-heading .skills,
+  .skills-tools-heading .tools {
+    flex: 1 1 0;
+    max-width: 50%;
+    width: 50%;;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+      main{
+    padding-top: 400px;
+}
+.column.col-md-6 {
+width: 50%;
+
+}
+ 
+}
+.project-content {
+  grid-area: right;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+    .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+    .row {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px; /* Adjust spacing as needed */
+    }
+    .column.col-lg-7{
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+     .column.col-lg-5{
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+    
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+    .about-row.my-story{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .about-row .skills-tools {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Space between Skills and Tools */
+  }
+  .about-row .skills,
+  .about-row .tools {
+    width: 100%;
+  }
+  /* Remove float for flex children */
+  .about-row > [class*="col-"] {
+    float: none;
+    display: block;
+  }
+  
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1, h2, h3, h4 {
+    line-height: 1.4;
+    margin-bottom: 20px; /* Add space below headings */
+    margin-top: 30px;    /* Optional: add space above headings */
+}
+img{
+    width: 100%;
+max-width: 100%;
+height: auto;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
