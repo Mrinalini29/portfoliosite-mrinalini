@@ -13,6 +13,7 @@ font-Roboto
   margin: 0;
   box-sizing: border-box;
 }
+
 body{
     
 background-color: white;
@@ -67,6 +68,10 @@ p{
 img{
     width: 100%;
 }
+.myimg{
+      max-width: 350px;
+
+}
 /*links*/
 a{
     text-decoration: none;
@@ -94,6 +99,7 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #022d54; 
   transition: 0.2s opacity;
+  margin-top: 20px;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -161,12 +167,42 @@ a:active {
 
 .logo
 {
-    max-width: 250px;
+    max-width: 150px;
    
 }
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #ffff(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+
 nav > ul {
   list-style-type: none;
   padding: 0 ;
+  margin: 0;
 }
 nav > ul > li {
   display: inline-block;
@@ -186,7 +222,7 @@ hero{
     background-color: #ffffff;
 }
 main{
-    padding-top: 150px;
+    padding-top: 56px;
 }
 @media only screen and (max-width: 639px) {
     .row{
@@ -202,6 +238,31 @@ main{
     margin-bottom: 20px; /* Optional: adds space between stacked sections */
       
 }
+nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+nav > ul > li:last-child {
+    display: block;
+  }
+  /* Style the hamburger icon */
+  nav > ul > li .icon {
+    display: block;
+    font-size: 2em;
+    cursor: pointer;
+    text-align: right;
+  }
+  /* When menu is open, show all items vertically */
+  .navtoggle.responsive nav > ul > li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+
+
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -259,13 +320,40 @@ Medium devices (640px and larger)
     max-width: 50%;
     width: 50%;;
   }
+  .logo
+{
+    max-width: 300px;
+   
+}
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em 0;
+}
+
+}
+/* image customization */
+.imgolive{
+  width: 250px;
+  border: #000000 1px solid;
+}
+.oliveresearch{
+  width: 500px;
+  border: #000000 1px solid;
+}
+.designimgs{
+  border: #000000 1px solid;
+}
+.olivemainimg{
+  border: #000000 2px solid;
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
       main{
-    padding-top: 400px;
+    padding-top: 150px;
 }
 .column.col-md-6 {
 width: 50%;
@@ -333,7 +421,9 @@ X-large devices (1440px or larger)
     float: none;
     display: block;
   }
-  
+  nav > ul {
+  margin: 1em 0;
+}
 }
 
 [class*="col-"] {
@@ -354,6 +444,11 @@ img{
     width: 100%;
 max-width: 100%;
 height: auto;
+}
+#about-picture {
+  width: 100%;
+  height: 400px; /* or whatever fits */
+  display: block;
 }
 @keyframes color-change {
   0% {fill: #edc655;}

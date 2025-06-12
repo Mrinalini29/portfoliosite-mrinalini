@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>  
+  <script src="https://kit.fontawesome.com/d9d1981548.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
  
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -17,17 +20,26 @@
 <body>
     <div>
     <header>
+      <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
     <picture>
        <source srcset="img\mrinalini_pic\logo@1x.jpg" media="(max-width:767px)">
-       <img src="img\mrinalini_pic\logo@2x.jpg" alt="logo">
+       <img src="img\mrinalini_pic\logo@2x.jpg" class="logo" alt="logo">
     </picture>
-   <nav>
+     
+    <div class="nav">
+  <nav>
   <ul>
   <li><a href="index.html">Work</a></li>
   <li><a href="about.html">About</a></li>
   <li><a href="#contact">Contact</a></li>
+  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
   </ul>
+
   </nav>
+    </div>
+    </div>
+  </div>
   </div>
   </header>
 </div>
@@ -123,11 +135,11 @@ analysis for the two leading apps.</p>
     
 <picture>
   <source srcset="img\olive\1x\swot_calm@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\swot_calm@2x.jpg" alt="swot analysis for calm app">
+  <img src="img\olive\2x\swot_calm@2x.jpg" class="oliveresearch" alt="swot analysis for calm app">
 </picture>
 <picture>
   <source srcset="img\olive\1x\swot_myfitnesspal@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\swot_myfitnesspal@2x.jpg" alt="swot analysis for calm app">
+  <img src="img\olive\2x\swot_myfitnesspal@2x.jpg" class="oliveresearch" alt="swot analysis for calm app">
 </picture>
     
 </div>
@@ -167,7 +179,7 @@ health and wellness apps, as well as their personal goals.</p>
 <div>
     <picture>
   <source srcset="img\olive\1x\research_analysis@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\research_analysis@2x.jpg" alt="research analysis">
+  <img src="img\olive\2x\research_analysis@2x.jpg" class="oliveresearch" alt="research analysis">
 </picture>
 </div>
         </div>
@@ -180,11 +192,11 @@ to the app. Each persona reflects their own health and wellness requirements, go
 <div>
     <picture>
   <source srcset="img\olive\1x\persona_emilia@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\persona_emilia@2x.jpg" alt="user persona- Emilia">
+  <img src="img\olive\2x\persona_emilia@2x.jpg" class="oliveresearch" alt="user persona- Emilia">
 </picture>
 <picture>
   <source srcset="img\olive\1x\persona_ram@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\persona_ram@2x.jpg" alt="user persona- Ram">
+  <img src="img\olive\2x\persona_ram@2x.jpg" class="oliveresearch" alt="user persona- Ram">
 </picture>
 </div>
         </div>
@@ -198,11 +210,11 @@ ensure a seamless experience for them.</p>
 <div>
     <picture>
   <source srcset="img\olive\1x\userjourney_emilia@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\userjourney_emilia@2x.jpg" alt="user journey for persona emilia">
+  <img src="img\olive\2x\userjourney_emilia@2x.jpg" class="oliveresearch" alt="user journey for persona emilia">
 </picture>
 <picture>
   <source srcset="img\olive\1x\userjourney@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\userjourney@2x.jpg" alt="user journey for persona ram">
+  <img src="img\olive\2x\userjourney@2x.jpg" class="oliveresearch" alt="user journey for persona ram">
 </picture>
 </div>
         </div>
@@ -215,11 +227,11 @@ persona, Emilia.</p>
 <div>
     <picture>
   <source srcset="img\olive\1x\taskanalysis@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\taskanalysis@2x.jpg" alt="task analysis for persona emilia">
+  <img src="img\olive\2x\taskanalysis@2x.jpg" class="oliveresearch" alt="task analysis for persona emilia">
 </picture>
 <picture>
   <source srcset="img\olive\1x\userflow@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\userflow@2x.jpg" alt="user flow for persona- emilia">
+  <img src="img\olive\2x\userflow@2x.jpg" class="oliveresearch" alt="user flow for persona- emilia">
 </picture>
 </div>
         </div>
@@ -232,15 +244,15 @@ handdrawn sketches.</p>
 <div>
     <picture>
   <source srcset="img\olive\1x\wireframeapp@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\wireframeapp@2x.jpg" alt="paper wireframe for home page">
+  <img src="img\olive\2x\wireframeapp@2x.jpg"  class="imgolive" alt="paper wireframe for home page">
 </picture>
 <picture>
   <source srcset="img\olive\1x\wireframeExplore@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\wireframeexplore@2x.jpg" alt="paper wireframe for explore page">
+  <img src="img\olive\2x\wireframeexplore@2x.jpg" class="imgolive" alt="paper wireframe for explore page">
 </picture>
 <picture>
   <source srcset="img\olive\1x\wireframesreminders@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\wireframereminders@2x.jpg" alt="paper wireframe for reminders page">
+  <img src="img\olive\2x\wireframereminders@2x.jpg" class="imgolive" alt="paper wireframe for reminders page">
 </picture>
 </div>
         </div>
@@ -253,15 +265,15 @@ designed some Low-Fi mockups.</p>
 <div>
     <picture>
   <source srcset="img\olive\1x\signupmifi@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\sign_upmifi@2x.jpg" alt="mid fidelity mockup for sign up">
+  <img src="img\olive\2x\sign_upmifi@2x.jpg" class="imgolive" alt="mid fidelity mockup for sign up">
 </picture>
 <picture>
   <source srcset="img\olive\1x\food_diarymifi@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\food_diarymifi@2x.jpg" alt="midfidelity mockups for food diary">
+  <img src="img\olive\2x\food_diarymifi@2x.jpg" class="imgolive" alt="midfidelity mockups for food diary">
 </picture>
 <picture>
   <source srcset="img\olive\1x\homepagemifi@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\homepagemifi@2x.jpg" alt="mid fidelity mockup for home page">
+  <img src="img\olive\2x\homepagemifi@2x.jpg" class="imgolive" alt="mid fidelity mockup for home page">
 </picture>
 </div>
 
@@ -278,27 +290,27 @@ common design and UX patterns related to the product.</p>
 <div>
     <picture>
   <source srcset="img\olive\1x\buttons@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\buttons@2x.jpg" alt="Design system for buttons used in the app">
+  <img src="img\olive\2x\buttons@2x.jpg" class="designimgs"  alt="Design system for buttons used in the app">
 </picture>
 <picture>
   <source srcset="img\olive\1x\color@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\color@2x.jpg" alt="design system for colors used in the app">
+  <img src="img\olive\2x\color@2x.jpg" class="designimgs"  alt="design system for colors used in the app">
 </picture>
 <picture>
   <source srcset="img\olive\1x\design_systemtypo@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\design_systemtypo@2x.jpg" alt="design system for typography used in the app">
+  <img src="img\olive\2x\design_systemtypo@2x.jpg" class="designimgs"  alt="design system for typography used in the app">
 </picture>
 <picture>
   <source srcset="img\olive\1x\form@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\form@2x.jpg" alt="design system for forms used in the app">
+  <img src="img\olive\2x\form@2x.jpg" class="designimgs"  alt="design system for forms used in the app">
 </picture>
 <picture>
   <source srcset="img\olive\1x\icons@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\icons@2x.jpg" alt="design system for icons used in the app">
+  <img src="img\olive\2x\icons@2x.jpg" class="designimgs"  alt="design system for icons used in the app">
 </picture>
 <picture>
   <source srcset="img\olive\1x\spacing@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\spacing@2x.jpg" alt="design system for spacing used in the app">
+  <img src="img\olive\2x\spacing@2x.jpg" class="designimgs"  alt="design system for spacing used in the app">
 </picture>
 </div>
     </div>
@@ -311,15 +323,15 @@ common design and UX patterns related to the product.</p>
 <div>
     <picture>
   <source srcset="img\olive\1x\signup@1x.jpg" media="(max-width:767px)">
-  <img src="img\olive\2x\sign_up@2x.jpg" alt="high fidelity sign up page mockup">
+  <img src="img\olive\2x\sign_up@2x.jpg" class="imgolive" alt="high fidelity sign up page mockup">
 </picture>
 <picture>
   <source srcset="img\olive\1x\homepagehifi@1x.jpg.png" media="(max-width:767px)">
-  <img src="img\olive\2x\homepagehifi@2x.jpg.png" alt="high fidelity home page mockup">
+  <img src="img\olive\2x\homepagehifi@2x.jpg.png" class="imgolive" alt="high fidelity home page mockup">
 </picture>
 <picture>
   <source srcset="img\olive\1x\swipe_ through@1x.jpg.png" media="(max-width:767px)">
-  <img src="img\olive\2x\swipe through@2x.jpg.png" alt="high fidelity swipe through tutorial page mockup">
+  <img src="img\olive\2x\swipe through@2x.jpg.png" class="imgolive" alt="high fidelity swipe through tutorial page mockup">
 </picture>
 </div>
     </div>
