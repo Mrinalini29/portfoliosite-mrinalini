@@ -322,8 +322,8 @@ Medium devices (640px and larger)
   }
   .logo
 {
-    max-width: 300px;
-   
+    max-width: 250px;
+    
 }
 .navtoggle li:last-child {
   display: none;
@@ -424,6 +424,14 @@ X-large devices (1440px or larger)
   nav > ul {
   margin: 1em 0;
 }
+nav>ul>li{
+  display: inline-block;
+}
+.navtoggle li:not(:last-child){
+  display: not inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
 }
 
 [class*="col-"] {
@@ -479,4 +487,9 @@ height: auto;
 }
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+.logo {
+    max-width: 350px;
+   
+}
 }
